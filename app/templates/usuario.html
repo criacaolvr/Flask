@@ -2,11 +2,7 @@
 
 {% block conteudo %}
 
-    {% set mensagens = get_flashed_messages() %}
-    {% if mensagens %}
-        <div>Aqui vai aparecer a mensagem flash!</div>
-    {% endif %}
-
+    
     <body>
         <div class="tela">
 
@@ -22,6 +18,11 @@
                     <br>
                     <button type="submit">Login</button>
                 </form>
+
+                {% set mensagens = get_flashed_messages() %}
+                    {% if mensagens %}
+                        <div>Aqui vai aparecer a mensagem flash!</div>
+                    {% endif %}
 
                 <a class=recuperar title="Clique para recuperar a sua senha!"  href="#" ><h6>Recuperar Senha</h6>
                 </a>
