@@ -4,28 +4,24 @@
 <body>
     <div class="tela">
 
-        <div class="divlogo"><img class="logo" src="../static/logoamandapng.png" alt="logo"></div>
-    
-        <div class="panel">
-    
-            <form accept-charset="UTF-8" role="form" action="autenticar.php" method="post">
-            <fieldset>
-                <div class="form-group">
-                    <input class="form-control" placeholder="e-mail ou celular" name="email" type="text">
-                </div>
-                <br>
-                <div class="form-group">
-                    <input class="form-control" placeholder="senha" name="senha" type="password" value="">
-                </div>
-                <br>
-                <input class="btn btn-danger btn-block" type="submit" value="Login">
-            </fieldset>
-            <a class=recuperar title="Clique para recuperar a sua senha!"  href="" data-toggle="modal" data-target="#exampleModal"><h6>Recuperar Senha</h6></a>
-            </form>
+        <div class="divlogo">
+            <img class="logo" src="../static/logoamandapng.png" alt="logo">
         </div>
+
+        <div class="panel">
+            <form action="/autenticar">
+                <input class="preencher" placeholder="e-mail ou celular" name="usuario" type="text">
+                <br>
+                <input class="preencher" placeholder="senha" name="senha" type="password" value="">
+                <br>
+                <button type="submit">Login</button>
+            </form>
+
+            <a class=recuperar title="Clique para recuperar a sua senha!"  href="#" ><h6>Recuperar Senha</h6>
+            </a>
+            
     </div>
-   
-    
+
 </body>
     
     

@@ -17,11 +17,21 @@
 }
 
 .nav{
-    display: flex;
-    justify-content: space-between;
-    list-style: none;   
+    position: absolute;
+    top: 0;
+    left: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    display: block;
+    justify-content: space-around;
+    list-style: none;
+    background-color: var(--color4);
+    width: 50%;
+    box-shadow: 5px 7px 15px 0px rgba(0, 0, 0, 0.452);
 }
-
+.nav li{
+    padding-top: 10px;
+}
 .nav a{
     text-decoration: none;
     color: var(--bg-color);
@@ -29,7 +39,9 @@
     list-style: none;
     
 }
-
+.nav a:hover{
+    color: var(--color2);
+}
 .home{
     color: var(--bg-color);
 }
@@ -49,7 +61,7 @@ body{
     padding: 0px 20px 20px 20px;
     border-radius: 10px;
     margin: auto;
-    box-shadow: 0px 10px 15px 5px rgba(0, 0, 0, 0.192);
+    box-shadow: 5px 7px 15px 0px rgba(0, 0, 0, 0.452);
     text-align: center;
     opacity: 0.9;
 }
@@ -61,17 +73,17 @@ body{
     color: var(--color4);
 }
 
-fieldset{
-    padding: 10px;
-    border: none;
-    font-size: var(--p-font);
+form{
+    padding-top: 20px;
+    border: 0px;
 }
+
 input{
     border: none;
     padding: 5px;
     border-radius: 3px;
 }
-.btn{
+button{
     margin: auto;
     background-color:var(--color4);
     color: white;
@@ -79,7 +91,7 @@ input{
     padding: 5px 20px;
     border-radius: 10px;
 }
-.btn:hover{ 
+button:hover{ 
     transform: scale(1.1);
     background-color: var(--colordes);
     box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.356);
