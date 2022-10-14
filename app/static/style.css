@@ -71,6 +71,7 @@ body{
     border-radius: 10px;
     padding: 10px;
     color: var(--color4);
+    justify-content: space-around;
 }
 
 form{
@@ -82,7 +83,9 @@ input{
     border: none;
     padding: 5px;
     border-radius: 3px;
+    margin-bottom: 10px;
 }
+
 button{
     margin: auto;
     background-color:var(--color4);

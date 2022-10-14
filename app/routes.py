@@ -14,8 +14,8 @@ def index():
 def usuario():
     return render_template('usuario.html')
 
-@app.route('/autenticar', methods=['GET'])
+@app.route('/autenticar', methods=['POST'])
 def autenticar():
-    usuario = request.args.get('usuario')
-    senha = request.args.get('senha')
+    usuario = request.form.get('usuario')
+    senha = request.form.get('senha')
     return "Usuario:{} e Senha {}".format(usuario, senha)
