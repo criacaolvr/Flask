@@ -73,6 +73,7 @@ input{
 }
 .btn{
     margin: auto;
+    background-color:var(--color4);
 }
 .btn:hover{ 
     transform: scale(1.1);
