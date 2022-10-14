@@ -1,6 +1,3 @@
-from crypt import methods
-
-from django.shortcuts import redirect
 from app import app
 from flask import render_template
 from flask import request
