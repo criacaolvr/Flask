@@ -21,7 +21,13 @@
 
                 {% set mensagens = get_flashed_messages() %}
                     {% if mensagens %}
-                        <div class="flashmsg">Aqui vai aparecer a mensagem flash!</div>
+                        <div class="flashmsg">
+                            {% for msg in mensagens %}
+                                {{ msg }}
+                            {% endfor %}
+
+
+                        </div>
                     {% endif %}
 
                 <a class=recuperar title="Clique para recuperar a sua senha!"  href="#" ><h6>Recuperar Senha</h6>
