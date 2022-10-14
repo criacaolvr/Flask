@@ -74,9 +74,13 @@ input{
 .btn{
     margin: auto;
     background-color:var(--color4);
+    color: white;
+    font-weight: bolder;
+    padding: 20px;
 }
 .btn:hover{ 
     transform: scale(1.1);
+    background-color: var(--colordes);
     box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.356);
 }
 
