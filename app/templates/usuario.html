@@ -1,28 +1,35 @@
 {% extends 'base.html' %}
 
 {% block conteudo %}
-<body>
-    <div class="tela">
 
-        <div class="divlogo">
-            <img class="logo" src="../static/logoamandapng.png" alt="logo">
+    {% set mensagens = get_flashed_messages() %}
+    {% if mensagens %}
+        <div>Aqui vai aparecer a mensagem flash!</div>
+    {% endif %}
+
+    <body>
+        <div class="tela">
+
+            <div class="divlogo">
+                <img class="logo" src="../static/logoamandapng.png" alt="logo">
+            </div>
+
+            <div class="panel">
+                <form action="/autenticar" method="post">
+                    <input class="preencher" placeholder="e-mail ou celular" name="usuario" type="text">
+                    <br>
+                    <input class="preencher" placeholder="senha" name="senha" type="password" value="">
+                    <br>
+                    <button type="submit">Login</button>
+                </form>
+
+                <a class=recuperar title="Clique para recuperar a sua senha!"  href="#" ><h6>Recuperar Senha</h6>
+                </a>
+                
         </div>
 
-        <div class="panel">
-            <form action="/autenticar" method="post">
-                <input class="preencher" placeholder="e-mail ou celular" name="usuario" type="text">
-                <br>
-                <input class="preencher" placeholder="senha" name="senha" type="password" value="">
-                <br>
-                <button type="submit">Login</button>
-            </form>
+    </body>
+        
 
-            <a class=recuperar title="Clique para recuperar a sua senha!"  href="#" ><h6>Recuperar Senha</h6>
-            </a>
-            
-    </div>
 
-</body>
-    
-    
 {% endblock %}
