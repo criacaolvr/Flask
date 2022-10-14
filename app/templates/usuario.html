@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block conteudo %}
+<body>
+    <div class="tela">
+
+        <div class="divlogo"><img class="logo" src="static/logoamandapng.png" alt="logo"></div>
+    
+        <div class="panel">
+    
+            <form accept-charset="UTF-8" role="form" action="autenticar.php" method="post">
+            <fieldset>
+                <div class="form-group">
+                    <input class="form-control" placeholder="e-mail ou celular" name="email" type="text">
+                </div>
+                <br>
+                <div class="form-group">
+                    <input class="form-control" placeholder="senha" name="senha" type="password" value="">
+                </div>
+                <br>
+                <input class="btn btn-danger btn-block" type="submit" value="Login">
+            </fieldset>
+            <a class=recuperar title="Clique para recuperar a sua senha!"  href="" data-toggle="modal" data-target="#exampleModal">Recuperar Senha</a>
+            </form>
+        </div>
+    </div>
+   
+    
+</body>
+    
+    
+{% endblock %}
